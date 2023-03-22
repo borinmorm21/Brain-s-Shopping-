@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/2649/2649327.png" type="image/x-icon">
+  <title>Brian's Shopping</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Brian's Shopping</h1>
+    <!-- items -->
+    <div class="itemContainer">
+      <div class="belt">
+        <img src="https://cdn-icons-png.flaticon.com/512/2912/2912436.png" alt="belt">
+        <p>Belt cost <span>$5</span></p>
+      </div>
+
+      <div class="shirt">
+        <img src="https://cdn-icons-png.flaticon.com/512/2957/2957379.png" alt="shirt">
+        <p>Shirt cost <span>$10</span></p>
+      </div>
+    </div>
+
+    <!-- input -->
+    <div>
+      <label>Your Budget</label>
+      <input type="text" placeholder="Enter your budget" id="budgetInput">
+    </div>
+    <div>
+      <label>Belt Quantity</label>
+      <input type="text" placeholder="How many belts do you want to buy?" id="beltNum">
+    </div>
+    <div>
+      <label>Shirt Quantity</label>
+      <input type="text" placeholder="How many shirts do you want to buy?" id="shirtNum">
+    </div>
+    <!-- submit -->
+    <button onclick="calculateCost()">Calculate</button>
+    <p class="result">result ⬇️ </p>
+
+    <!-- result/output -->
+    <p id="output"></p>
+  </div>
+
+  <!-- link to javascript -->
+  <script src="app.js"></script>
+</body>
+</html>
